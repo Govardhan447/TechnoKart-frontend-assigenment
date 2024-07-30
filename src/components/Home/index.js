@@ -5,7 +5,7 @@ import DisplayPost from '../DisplayPost'
 import './index.css'
 
 const Home = () => (
-  <>
+  <div className="blog-container">
     <Header />
     <div className="home-container">
       <div className="home-content">
@@ -49,8 +49,10 @@ const Home = () => (
         className="home-desktop-img"
       />
     </div>
-    <DisplayPost />
-  </>
+    <div className="home-post-container">
+      <DisplayPost />
+    </div>
+  </div>
 )
 
 export default Home
